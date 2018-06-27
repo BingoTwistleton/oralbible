@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffb3"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="oralbible.kairos.com.oralbible.MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/this_toolbar"
+                android:layout_height="55dp"
+                android:layout_width="match_parent"
+                layout="@layout/tool_bar_main"/>
+
+            <View
+                android:id="@+id/toolbar_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/toolbar_dropshadow"
+                app:layout_constraintTop_toBottomOf="@+id/this_toolbar" />
+
+            <TextView
+                android:id="@+id/oralBibleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:layout_marginLeft="12dp"
+                android:textColor="#f44f41"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_shadow" />
+
+
+            <!-- script process.pl to generate buttons and else/if sequence in MainActivity.java
+                 is in /home/brad/kairosrecordings -->
+
+            <Button
+                android:id="@+id/button01"
+                style="@style/AppTheme.Button"
+                android:text="1. Creation"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oralBibleName" />
+
+            <Button
+                android:id="@+id/button02"
+                style="@style/AppTheme.Button"
+                android:text="2. Adam and Eve"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button01" />
+
+
+            <Button
+                android:id="@+id/button03"
+                style="@style/AppTheme.Button"
+                android:text="3. The Fall"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button02" />
+
+            <Button
+                android:id="@+id/button04"
+                style="@style/AppTheme.Button"
+                android:text="4. Cain and Abel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button03" />
+
+            <Button
+                android:id="@+id/button05"
+                style="@style/AppTheme.Button"
+                android:text="5. The Spirit World"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button04" />
+
+            <Button
+                android:id="@+id/button06"
+                style="@style/AppTheme.Button"
+                android:text="6. Noah"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button05" />
+
+            <Button
+                android:id="@+id/button07"
+                style="@style/AppTheme.Button"
+                android:text="7. Abraham"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button06" />
+
+            <Button
+                android:id="@+id/button08"
+                style="@style/AppTheme.Button"
+                android:text="8. Abraham and Isaac"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button07" />
+
+            <Button
+                android:id="@+id/button09"
+                style="@style/AppTheme.Button"
+                android:text="9. Jacob and the Blessing"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button08" />
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/AppTheme.Button"
+                android:text="10. Jacob and Easau Reconcile"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button09" />
+
+            <Button
+                android:id="@+id/button11"
+                style="@style/AppTheme.Button"
+                android:text="11. Joseph's Dreams"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+            <Button
+                android:id="@+id/button12"
+                style="@style/AppTheme.Button"
+                android:text="12. Joseph Rules"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+            <Button
+                android:id="@+id/button13"
+                style="@style/AppTheme.Button"
+                android:text="13. Joseph Reunited"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+            <Button
+                android:id="@+id/button14"
+                style="@style/AppTheme.Button"
+                android:text="14. The Burning Bush"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+            <Button
+                android:id="@+id/button15"
+                style="@style/AppTheme.Button"
+                android:text="15. Passover"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+            <Button
+                android:id="@+id/button16"
+                style="@style/AppTheme.Button"
+                android:text="16. The Ten Commandments"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+            <Button
+                android:id="@+id/button17"
+                style="@style/AppTheme.Button"
+                android:text="17. The Spies"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button16" />
+
+            <Button
+                android:id="@+id/button18"
+                style="@style/AppTheme.Button"
+                android:text="18. Joshua at Jericho"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+            <Button
+                android:id="@+id/button19"
+                style="@style/AppTheme.Button"
+                android:text="19. David and Goliath"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+            <Button
+                android:id="@+id/button20"
+                style="@style/AppTheme.Button"
+                android:text="20. Elijah"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button19" />
+
+
+            <Button
+                android:id="@+id/button21"
+                style="@style/AppTheme.Button"
+                android:text="21. Jonah"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+            <Button
+                android:id="@+id/button22"
+                style="@style/AppTheme.Button"
+                android:text="22. Josiah"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button21" />
+
+            <Button
+                android:id="@+id/button23"
+                style="@style/AppTheme.Button"
+                android:text="23. Daniel"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button22" />
+
+            <Button
+                android:id="@+id/button24"
+                style="@style/AppTheme.Button"
+                android:text="24. Shadrach"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button23" />
+
+            <Button
+                android:id="@+id/button25"
+                style="@style/AppTheme.Button"
+                android:text="25. Nehemiah"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button24" />
+
+            <Button
+                android:id="@+id/button26"
+                style="@style/AppTheme.Button"
+                android:text="26. Jesus' Birth"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button25" />
+
+            <Button
+                android:id="@+id/button27"
+                style="@style/AppTheme.Button"
+                android:text="27. Jesus' Baptism"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button26" />
+
+            <Button
+                android:id="@+id/button28"
+                style="@style/AppTheme.Button"
+                android:text="28. The Paralytic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button27" />
+
+            <Button
+                android:id="@+id/button29"
+                style="@style/AppTheme.Button"
+                android:text="29. The Withered Hand"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button28" />
+
+            <Button
+                android:id="@+id/button30"
+                style="@style/AppTheme.Button"
+                android:text="30. Jesus Calms the Storm"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button29" />
+
+            <Button
+                android:id="@+id/button31"
+                style="@style/AppTheme.Button"
+                android:text="31. Nicodemus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button30" />
+
+            <Button
+                android:id="@+id/button32"
+                style="@style/AppTheme.Button"
+                android:text="32. The Woman at the Well"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button31" />
+
+
+            <Button
+                android:id="@+id/button33"
+                style="@style/AppTheme.Button"
+                android:text="33. The Good Samaritan"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button32" />
+
+            <Button
+                android:id="@+id/button34"
+                style="@style/AppTheme.Button"
+                android:text="34. Hypocrisy"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button33" />
+
+            <Button
+                android:id="@+id/button35"
+                style="@style/AppTheme.Button"
+                android:text="35. Feeding 5000"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button34" />
+
+            <!-- 36 not in this set -->
+
+            <Button
+                android:id="@+id/button37"
+                style="@style/AppTheme.Button"
+                android:text="37. Mary and Martha"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button35" />
+
+            <Button
+                android:id="@+id/button38"
+                style="@style/AppTheme.Button"
+                android:text="38. The Prodigal Son"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button37" />
+
+            <Button
+                android:id="@+id/button39"
+                style="@style/AppTheme.Button"
+                android:text="39. Lazarus and the Rich Man"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button38" />
+
+            <Button
+                android:id="@+id/button40"
+                style="@style/AppTheme.Button"
+                android:text="40. The Tax Collector"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button39" />
+
+            <Button
+                android:id="@+id/button41"
+                style="@style/AppTheme.Button"
+                android:text="41. Raising Lazarus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button40" />
+
+            <Button
+                android:id="@+id/button42"
+                style="@style/AppTheme.Button"
+                android:text="42. The Rich Ruler"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button41" />
+
+            <Button
+                android:id="@+id/button43"
+                style="@style/AppTheme.Button"
+                android:text="43. Zaccheus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button42" />
+
+            <Button
+                android:id="@+id/button44"
+                style="@style/AppTheme.Button"
+                android:text="44. Bartimaeus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button43" />
+
+
+            <Button
+                android:id="@+id/button45"
+                style="@style/AppTheme.Button"
+                android:text="45. The Triumphal Entry"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button44" />
+
+            <Button
+                android:id="@+id/button46"
+                style="@style/AppTheme.Button"
+                android:text="46. Mary Anoints Jesus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button45" />
+
+            <Button
+                android:id="@+id/button47"
+                style="@style/AppTheme.Button"
+                android:text="47. The Last Supper"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button46" />
+
+            <Button
+                android:id="@+id/button48"
+                style="@style/AppTheme.Button"
+                android:text="48. Jesus' Arrest"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button47" />
+
+            <Button
+                android:id="@+id/button49"
+                style="@style/AppTheme.Button"
+                android:text="49. The Crucifixion"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button48" />
+
+            <Button
+                android:id="@+id/button50"
+                style="@style/AppTheme.Button"
+                android:text="50. The Resurrection"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button49" />
+
+            <Button
+                android:id="@+id/button51"
+                style="@style/AppTheme.Button"
+                android:text="51. Pentecost"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button50" />
+
+            <Button
+                android:id="@+id/button52"
+                style="@style/AppTheme.Button"
+                android:text="52. Beautiful Gate"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button51" />
+
+            <Button
+                android:id="@+id/button53"
+                style="@style/AppTheme.Button"
+                android:text="53. Peter and John on Trial"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button52" />
+
+            <Button
+                android:id="@+id/button54"
+                style="@style/AppTheme.Button"
+                android:text="54. Ananias and Saffira"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button53" />
+
+            <Button
+                android:id="@+id/button55"
+                style="@style/AppTheme.Button"
+                android:text="55. Stephen"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button54" />
+
+            <Button
+                android:id="@+id/button56"
+                style="@style/AppTheme.Button"
+                android:text="56. Simon the Magician"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button55" />
+
+            <Button
+                android:id="@+id/button57"
+                style="@style/AppTheme.Button"
+                android:text="57. Peter and Cornelius"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button56" />
+
+            <Button
+                android:id="@+id/button58"
+                style="@style/AppTheme.Button"
+                android:text="58. The Philippian Jailer"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button57" />
+
+            <Button
+                android:id="@+id/button59"
+                style="@style/AppTheme.Button"
+                android:text="59. The Unknown God"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button58" />
+
+            <Button
+                android:id="@+id/button60"
+                style="@style/AppTheme.Button"
+                android:text="60. Paul in Ephesus"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button59" />
+
+            <Button
+                android:id="@+id/button61"
+                style="@style/AppTheme.Button"
+                android:text="61. Revelation"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button60" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/kairosAttribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/kairos"
+                android:textColor="#f44f41"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>
