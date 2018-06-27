@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#41a9f4</color> <!-- top system bar -->
+    <color name="colorPrimary">#f48942</color>     <!-- top Oral Bible bar -->
+    <color name="colorToolbar">#ffffff</color>     <!-- text in Oral Bible bar -->
+    <color name="colorAccent">#ff66b3</color>      <!-- accents, such as sound tracker dot -->
+</resources>
