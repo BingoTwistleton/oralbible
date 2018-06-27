@@ -1,3 +1,1 @@
 # oralbible
-# oralbible
-# Mandingo
