@@ -1,24 +1,24 @@
 # oralbible
 
 Files/directories go in AndroidStudio file heirarchy. As shown below:
-
-#AndroidStudioProjects/OralBible/app/src/main/
-  AndroidManifest.xml
-  ic_launcher_kairos-web.png
-# 
-AndroidStudioProjects/OralBible/app/src/main/java/oralbible/kairos/com/oralbible/
-  MainActivity.java
-  PlaySound.java
-  
-AndroidStudioProjects/OralBible/app/src/main/
-  drawable
-  drawable-v24
-  layout
-  mipmap-anydpi-v26
-  mipmap-hdpi
-  mipmap-mdpi
-  mipmap-xhdpi
-  mipmap-xxhdpi
-  mipmap-xxxhdpi
-  raw
-  values
+<br><br>
+<b>AndroidStudioProjects/OralBible/app/src/main/</b> <br>
+  AndroidManifest.xml <br>
+  ic_launcher_kairos-web.png <br>
+  <br>
+<b>AndroidStudioProjects/OralBible/app/src/main/java/oralbible/kairos/com/oralbible/</b> <br>
+  MainActivity.java<br>
+  PlaySound.java<br>
+  <br><br>
+<b>AndroidStudioProjects/OralBible/app/src/main/</b><br>
+  drawable<br>
+  drawable-v24<br>
+  layout<br>
+  mipmap-anydpi-v26<br>
+  mipmap-hdpi<br>
+  mipmap-mdpi<br>
+  mipmap-xhdpi<br>
+  mipmap-xxhdpi<br>
+  mipmap-xxxhdpi<br>
+  raw<br>
+  values<br>
