@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item> <!-- colors system owned top bar -->
+        <item name="colorPrimary">@color/colorPrimary</item>         <!-- colors app's top bar, below system-owned bar -->
+        <item name="colorAccent">@color/colorAccent</item>           <!-- accents, such as sound tracker dot -->
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:onClick">sendMessage</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+</resources>
+
